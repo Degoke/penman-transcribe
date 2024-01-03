@@ -11,5 +11,6 @@ app = FastAPI()
 
 @app.post('/transcribe')
 async def transcribe(body: TranscriptionRequest):
+    body.model_dump()
     response = handle_transcribe(body.bucket, body.key)
     return response

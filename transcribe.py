@@ -4,7 +4,7 @@ from threading import Lock
 import ffmpeg
 import numpy as np
 
-MODEL_NAME = "tiny"
+MODEL_NAME = "medium"
 SAMPLE_RATE = 16000
 
 
